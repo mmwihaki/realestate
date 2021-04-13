@@ -1,0 +1,50 @@
+.navbar {
+  box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
+}
+
+.navbar .nav-item a.nav-link, .navbar .nav-item a.nav-link.dropdown-toggle {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.navbar .nav-item a.nav-link:hover {
+  color: black;
+}
+
+.navbar .nav-item {
+  position: relative;
+}
+
+.navbar .nav-item:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar .nav-item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: black;
+  transition: width 0.5s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+}
