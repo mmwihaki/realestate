@@ -185,7 +185,7 @@
 	 */
 	Owl.Defaults = {
 		items: 3,
-		loop: false,
+		loop: true,
 		center: false,
 		rewind: false,
 		checkVisibility: true,
@@ -2978,7 +2978,7 @@
 		dotClass: 'owl-dot',
 		dotsClass: 'owl-dots',
 		dots: true,
-		dotsEach: false,
+		dotsEach: 1,
 		dotsData: false,
 		dotsSpeed: false,
 		dotsContainer: false
