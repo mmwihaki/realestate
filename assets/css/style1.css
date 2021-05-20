@@ -185,7 +185,7 @@ a:hover {
 
 @media (min-width: 992px) {
   .list-a li {
-    width: 33.333%;
+    width: 50%;
   }
 }
 
